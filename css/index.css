@@ -1,0 +1,55 @@
+body{
+    background-color: #c1a0eb;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Round', cursive;
+}
+.container{
+    display: flex;
+    flex-flow: wrap;
+}
+.child{
+    margin: 5px;
+}
+.takeValues{
+    display: flex;
+    width: 100%;
+}
+.values{
+    margin: 5px;
+}
+.expenses{
+    width: 100%;
+}
+
+
+ fieldset {
+    margin: 10px;
+    border: 1px groove black;
+}
+
+legend{
+    margin-left: 40%;
+    width: fit-content;
+}
+
+.expenses{
+    display: inline-block;
+    margin: 10px;
+    width: 95%;
+}
+
+.balanceCounter{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.balanceCounter:hover{
+    font-size: larger;
+}
+.balance{
+    margin: 2px;
+    border-radius: 20px;
+}

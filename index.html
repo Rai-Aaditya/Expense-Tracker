@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Nova+Round&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div>
+        <fieldset>
+            <legend>Track your expenses</legend>
+            <div class="takeValues child" id="takeValues">
+                <label for="date" class="values">Add Date:</label>
+                <input type="date" class="values" name="date" id="date">
+
+                <label for="number" class="values">Add amount:</label>
+                <input type="number" class="values" name="amount" id="amount" placeholder="0 rs">
+
+                <label for="description" class="values">Add Description:</label>
+                <input type="text" name="description" id="description" class="values" placeholder="text">
+            </div>
+            <button id="credit" class="child">Credit Amount</button>
+            <button id="debit" class="child">Debit Amount</button>
+        </fieldset>
+        <div class="expenses">
+            <table class="table table-hover table-dark" id="expenses">
+                <h1>View Expenses</h1>
+                <thead>
+                    <tr class="table-active">
+                        <th class="table-active">Date</th>
+                        <th class="table-active">Amount</th>
+                        <th class="table-active">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="balanceCounter bg-dark text-light">
+            Balance:
+            <div class="balance" id="balance"></div>
+        </div>
+
+        <button type="reset" id="reset" class="m-3">Reset</button>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
